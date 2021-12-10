@@ -1,0 +1,45 @@
+.box1{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+margin: 20px;
+}
+#Menus{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: end;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    gap: 10px;
+}
+.box2,.box3,.box4,.box5,.box6,.box7{
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+}
+.box2{
+    width: 1200px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.box3{
+    width: 600px;
+}
+.box4,.box5,.box6{
+    width: 600px;
+}
+.box7{
+    width:1850px;
+}
+.box2{
+    padding: 20px;
+}
+.box3 img{
+   
+
+}
