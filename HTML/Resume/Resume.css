@@ -1,0 +1,16 @@
+table, tr, th,td,thead{
+    border: 2px solid black;
+    width: 100  px;
+}
+
+div{
+    border: 2px solid black !important;
+    width: 250px;
+}
+.thead{
+    border: 2px solid black !important;
+    width: 300px !important;
+}
+.grade{
+    width: 80px;
+}
