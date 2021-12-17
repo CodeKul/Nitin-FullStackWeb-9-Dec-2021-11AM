@@ -1,0 +1,48 @@
+li{
+    list-style: none;
+}
+.logo{
+    border-radius: 50%;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 1px solid black;
+    padding: 5px 10px 0px 10px;
+
+}
+nav{
+    box-shadow: 10px gray;
+}
+.Header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+}
+.box1,.box2,.box3,.box4,.box5{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+}
+.box1{
+    padding: 5px;
+    width: 750px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}
+.Search{
+    height: 20px;
+    border-radius: 4px;
+}
+.location{
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+}
+.block{
+    display: flex;
+    gap: 5px;
+}
