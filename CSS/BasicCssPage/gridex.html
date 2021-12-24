@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>ChatBot</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <style>
       .box {
@@ -21,43 +26,95 @@
         overflow: hidden;
       }
       .box1 {
-          border: 2px solid black;
-          height: 300px;
-          width: 295px;
-          border-radius: 10px;
-          position: absolute;
-          top: 200px;
-          left: 8px;
-          background-color: white;
+        border: 2px solid black;
+        height: 300px;
+        width: 295px;
+        border-radius: 10px;
+        position: absolute;
+        top: 200px;
+        left: 8px;
+        background-color: white;
       }
-      p{
-          height: 50px;
-          width: 50px;
-          border: 2px solid  #ff7b00;
-          border-radius: 50%;
-          position: absolute;
-          top: -40px;
-          left: 10px;
-          background-color: #ff7b00;
+      .logo{
+        height: 50px;
+        width: 50px;
+        border: 2px solid #ff7b00;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 10px;
+        background-color: #ff7b00;
       }
-      i{
-          position: absolute;
-          left: 5px;
-          top: 8px;
-          font-size: 30px;
+      i {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        font-size: 30px;
+      }
+      .header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px 0px;
+      }
+      .header2{
+        display: flex;
+        flex-direction: column;
+      }
+      .first{
+        position: relative;
+        top: 40px;
+        padding: 10px;
+
+      }
+      .mark{
+        color:orange;
+        padding-left: 5px;
+    
+      }
+      .header2{
+        margin-top: 10px;
+      }
+      li{
+        font-size: 13px;
+        color: orange;
+      }
+      .second{
+        border: 1px solid black;
+        border-radius: 10px;
+        height: 20px;
+        padding: 10px;
+        margin: 5px;
+
+      }
+      .second{
+        position: relative;
+        top: 50px;
+      }
+      span{
+        color: black;
       }
     </style>
   </head>
   <body>
     <div class="box">
-
+      <div class="header">
+        <span>Hello</span>
+        <span>Iris, Virtual Assistant</span>
+        <span>How May i Help You</span>
+      </div>
 
       <div class="box1">
-          <p style="color: rgb(248, 246, 245);"><i class="fas fa-robot"></i></p>
-
-
-          
+        <p class="logo" style="color: rgb(248, 246, 245)"><i class="fas fa-robot"></i></p>
+        <span class="first">Frequently ask Question<span class="mark">?</span></span>
+        <div class="header2">
+          <span class="second"> <li><span>Can redeem my FB before the orignal term</span></li></span>
+        </div>
+    
+     
       </div>
+
+       
+
     </div>
   </body>
 </html>
