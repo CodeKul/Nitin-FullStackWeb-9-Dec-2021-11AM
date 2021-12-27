@@ -1,60 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basic HTML</title>
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+  <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+  <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
     <style>
-        p{
-            color: rgb(233, 236, 13);
+        li{
+            list-style: none;
         }
-        .form{
-           padding: 10px;
-           margin: 10px;
-           border: 2px solid black;
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(188, 194, 201);
+            width: 100%;
         }
-        button{
-            padding: 20px;
+        ul{
+            display: flex;
+            gap: 10px;
         }
-        span{
-            color: blue;
-            font-size: small;
-            font-weight: normal;
+        a{
+            text-decoration: none;
+        }
+        .header{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: rgb(188, 194, 201);
+        }
+        .searchfield{
+            
+            background-color: white;
+            padding: 10px;
+            width: 90%;
+            border-radius: 5px;
+        }
+        .box1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            margin-left: 140px;
+        }
+        input{
+            border-radius: 5px;
+        }
+        .box2{
+            border: 2px solid black;
+            border-top-left-radius:100px;
+            border-bottom-right-radius:100px;
+            height: 400px;
+            margin: 10px;
+            background-color: rgb(230, 165, 113);
+        }
+        .layer1{
+            border: 2px solid black;
+            border-top-left-radius:100px;
+            border-bottom-right-radius:100px;
+            height: 380px;
+            margin: 10px;
+            background-color: rgb(97, 230, 97);
+        }
+        .secondblock{
+            position: absolute;
+            left: 700px;
+            top: 90px;
+        }
+        .alert{
+            position: relative;
+            left: 320px;
+            z-index: 1000;
+            top: 100px;
+        }
+        .followus{
+
+        }
+        #direction{
+            transform: rotateX(60deg);
+            transform: scale(90deg);
         }
     </style>
-</head>
-<body>
-    <div>
-        <h1>This is my First Heading <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error a et non vitae eos magnam, assumenda culpa, tempore expedita delectus veniam, aut temporibus quidem! Cupiditate eveniet dolores hic blanditiis obcaecati reiciendis quas iusto doloribus voluptates accusantium sed modi eos placeat tempore illo ut, dolorum alias in? Et cupiditate necessitatibus repellat, possimus quasi perferendis modi.</span></h1>
-       
-        <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur, <span style="color: aqua;">adipisicing</span> elit. Dicta quos minima suscipit culpa esse. Nulla, eveniet fugit? Sapiente impedit nostrum dolores optio non fugit ipsam ratione veniam doloribus atque! Aliquid eius et reprehenderit fugiat quaerat magni voluptatum laborum blanditiis fuga quas impedit esse, nesciunt commodi ut? Sint, maiores totam excepturi quidem dolor, animi accusamus quaerat incidunt libero ipsum natus molestiae laudantium minus inventore iusto eaque iure tempora atque labore voluptatibus! Ullam reprehenderit, ad sapiente, cum ratione fugit sequi rem reiciendis natus voluptatibus repudiandae explicabo. Non, est pariatur. amet consectetur adipisicing elit. Repellendus exercitationem cum harum reiciendis assumenda obcaecati nam voluptates ab rem. Delectus itaque tempora officia, natus, provident ea doloremque eligendi quod recusandae eum non pariatur dolores impedit.</p>
-        <input type="checkbox" /> <br>
-      
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="logo"><i class="fab fa-slack"></i> Jobs</a></li>
         
-        <div class="form">
-        <label for="FirstName" id="FirstName">
-        <input type="text" id="" placeholder="Email"><br><br>
-        <label for="lastname">
-            <input type="password" placeholder="password"/><br><br>
+      </ul>
+      <ul>
+        <li><a href="/home">Home </a></li>
+        <li><a href="/home">About </a></li>
+        <li><a href="/home">Contact Us </a></li>
+        <li><a href="/home">Services </a></li>
 
-            <button>abc</buttton>
-            <button>bhggj</buttton>
-        </label>
-        <button>
-            Log In
-        </button>
-<label for="number"> number  </label>
-<br>
+      </ul>
+      <ul>
+          <button>Sign In</button>
+          <button>Craete Account</button>
+      </ul>
+    </nav>
+    <div class="header">
+        <div class="box1">
+            <h3>
+                Millions Of <span style="color: rgb(64, 216, 64);">Jobs</span> for you.
+            </h3>
+            <h3><span style="color: red;">Verified </span>by Us.</h3>
+          
+            <div class="searchfield">
+                <input type="text">
+                <input type="text">
+                <button style="background-color: rgb(64, 216, 64); border-radius: 5px; color: white;">search</button>
+            </div>
+            <div class="alert" style="background-color: white; margin-top: 50px; width: 60%;">
+                <p style="color: rgb(90, 214, 90);">
+                    congratulation
+                </p>
+                <p>you have been selected UI/UX Designer</p>
+            </div>
+          
 
-<label for="male">male</label>
-<input type="radio" id="male"  name="male" value="male"><br>
-
-<label for="female">female</label>
-<input type="radio" id="female" name="female" value="female">
-       
-
+        </div>
+        <div class="box2">
+            <div class="layer1">
+ <img class="secondblock" src="https://images.unsplash.com/photo-1640544641671-939d8095e351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" height="350" width="200" alt="">
+            </div>
+            <div class="followus">
+                <p id="direction">Follow Us</p>
+            </div>
+           
+        </div>
     </div>
-    </div>
-</body>
+
+  </body>
 </html>
